@@ -5,16 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./Style/style.css" rel="stylesheet" />
         <title>Sufiana Arumdita Online CV</title>
+
+        <style>
+            body {
+                background-color: #FFF2F2;
+            }
+
+            .sub-head {
+                color: rebeccapurple;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            .sub-head.sub-text {
+                text-align: center;
+            }
+
+            .sub-text, p {
+                padding-top: 1.5rem;
+            }
+
+            #photo-profile:hover {
+                opacity:0.8;
+            }
+
+        </style>
+
     </head>
-    <body style="background-color: #FFF2F2;">
+    <body>
         <table cellspacing="30">
             <tr>
                 <td>
-                    <img src="./images/Sufiana-modified.png" alt="Sufiana Arumdita Image"/>
+                    <img id="photo-profile" src="./images/Sufiana-modified.png" alt="Sufiana Arumdita Image"/>
                 </td>
                 <td>
                     <h1 style="color: orangered; ;">SUFIANA ARUMDITA</h1>
-                    <h4><em><a href="https://s1sisteminformasi.id/">Information System</a>'s Student</em></h4>
+                    <h4><em><a href="https://s1sisteminformasi.id/" title="Click here">Information System</a>'s Student</em></h4>
                     <h4><em>Industrial Technology Faculty</em></h4>
                     <h4><em>Telkom University</em></h4>
                     <p>Saya merupakan mahasiswa semester 5 jurusan Sistem Informasi di Universitas Telkom.
@@ -28,8 +53,8 @@
             </tr>
         </table>
         <br />
-        <h2 style="color:rebeccapurple">Riwayat Pendidikan</h2>
-        <table border="2" width="50%" height="170">
+        <h2 class="sub-head">Riwayat Pendidikan</h2>
+        <table style="margin-top: 2.2rem; margin-left: 2.3rem;" border="2" width="50%" height="170">
             <tr>
                 <th>Pendidikan</th>
                 <th>Jurusan</th>
@@ -57,8 +82,8 @@
             </tr>
         </table>
         <br />
-        <h2 style="color:rebeccapurple">Skills</h2>
-        <table>
+        <h2 class="sub-head">Skills</h2>
+        <table style="padding-top: 0.25rem; padding-left: 2rem;">
             <tr>
                 <td>
                     <table cellspacing="15">
@@ -103,18 +128,18 @@
             </tr>
         </table>
         <br />
-        <h2 style="text-align: center; color:rebeccapurple">About Me</h2>
+        <h2 class="sub-head sub-text">About Me</h2>
         <p> Saya adalah seorang pekerja keras dan berdedikasi.
             Saya antusias untuk mempelajari teknologi baru yang terus meningkatkan keterampilan saya dalam bidang <em>web development</em> khususnya bagian <em>frontend</em>.
             Saya sangat bersedia untuk berkolaborasi dalam tim untuk mengembangkan website atau aplikasi yang memenuhi persyaratan dan harapan pengguna.</p>
         <p>Let's Colaborate with me &#128522;</p>
         <!--<p><a href="./contactMe.html">Contact Me</a></p>-->
         <br />
-        <h2 style="text-align: center; color:rebeccapurple">My Contact Details &#128234;</h2>
+        <h2 class="sub-head sub-text">My Contact Details &#128234;</h2>
         <p>Ayo Kolaborasi bareng dengan menghubungi saya melalui kontak berikut</p>
         <ul>
             <li><strong>E-mail: </strong>sufianaarumdita@gmail.com</li>
-            <li><strong>Github: </strong><a href="https://github.com/Sufiana-A">Sufiana-A</a></li>
+            <li><strong>Github: </strong><a href="https://github.com/Sufiana-A" title="Click here">Sufiana-A</a></li>
             <li><strong>IG: </strong>arumditasufiana</li>
         </ul>
 
@@ -128,9 +153,10 @@
             <br />
             <label>Message:</label><br />
             <textarea name="yourMessage" rows="15" cols="40"></textarea><br />
-            <input style="background-color: #4CAF50; /* Green */
+            <button style="background-color: #4CAF50;
             border: none;
-            color: white;" type="submit" name="kirim" />
+            color: white;
+            cursor: pointer;" type="submit" name="kirim">Submit</button>
         </form>
     </body>
 </html>
